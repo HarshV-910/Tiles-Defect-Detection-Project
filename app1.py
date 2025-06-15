@@ -1,7 +1,7 @@
-import streamlit as st
-import tensorflow as tf
-import numpy as np
-from PIL import Image, ImageOps  # Pillow library
+import streamlit as st # type: ignore
+import tensorflow as tf # type: ignore
+import numpy as np # type: ignore
+from PIL import Image, ImageOps  # Pillow library # type: ignore 
 
 # Add custom CSS for background image
 st.markdown(
