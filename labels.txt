@@ -1,6 +1,6 @@
-0 crack
-1 glue_strip
-2 good
-3 gray_stroke
-4 oil
-5 rough
+crack
+glue_strip
+good
+gray_stroke
+oil
+rough

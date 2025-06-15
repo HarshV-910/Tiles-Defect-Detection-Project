@@ -57,7 +57,7 @@ with open("labels.txt", "r") as f:
 # Function to predict with TFLite model
 def predict_image_tflite(image_file):
     # Load TFLite model and allocate tensors
-    interpreter = tf.lite.Interpreter(model_path="model.tflite")
+    interpreter = tf.lite.Interpreter(model_path="model_unquant.tflite")
     interpreter.allocate_tensors()
 
     # Get input and output details
@@ -183,7 +183,6 @@ elif app_mode == "Leather Anomaly Detection":
 
         if st.button("Predict"):
             st.snow()
-            st.write("Prediction in progress...")
 
             class_name, confidence_score = predict_image_tflite(test_image)
 
