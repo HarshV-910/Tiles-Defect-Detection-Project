@@ -11,7 +11,7 @@ The model is trained to classify ceramic tile images into the following categori
 - Good (No Defect)  
 - Gray Stroke  
 - Oil  
-- Rough  
+- Rough 
 
 ## Model Information
 Model Type: TensorFlow Lite  
