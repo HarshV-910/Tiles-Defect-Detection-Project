@@ -8,7 +8,7 @@ st.markdown(
     """
     <style>
     .stApp {
-        background-image: url("https://img.freepik.com/free-photo/leather-texture-background_1385-1128.jpg?semt=ais_hybrid&w=740");
+        background-image: url("https://images.unsplash.com/photo-1695728213930-93ced4114eb0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRhcmslMjB0aWxlcyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D");
         # background-image: url("https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
         background-size: cover;
         background-position: center;
@@ -22,14 +22,14 @@ st.markdown(
         bottom: 0;
         z-index: -1;
     }
-    header {visibility: hidden;}
+    # header {visibility: hidden;}
     </style>
     """,
     unsafe_allow_html=True
 )
 
 # sidebar_bg = ""  # Web URL
-sidebar_bg = "https://img.freepik.com/free-vector/black-leather-texture_1048-1036.jpg?t=st=1745687056~exp=1745690656~hmac=97ebe4943f2b4192a079ca64ab5d91938dff33a80e7116277a745209e3f3d11c&w=740"  # Web URL
+sidebar_bg = "https://images.unsplash.com/photo-1642944267662-dacacac1132c?q=80&w=642&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  # Web URL
 
 st.markdown(
     f"""
@@ -41,6 +41,7 @@ st.markdown(
         background-repeat: no-repeat;
         color:white; 
         text-shadow: 0.3px 0.3px 0.3px white,0.6px 0.6px 1px black;
+        border-right : 0.2px solid white; 
 
         
     }}
@@ -102,7 +103,7 @@ if app_mode == "Home":
     st.header("")
     st.markdown("""
 # Leather Anomaly Detection in Manufacturing""")
-    st.image("https://imgs.search.brave.com/eBvLVlfi8-X1GfzPxRWQ84WwsUpwsCkRFfYxKYTAZOg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c2hvcGlmeS5jb20v/cy9maWxlcy8xLzAw/MjkvMDM5Ni81NzYw/L2ZpbGVzLzFfMTEx/MTFmYTEtOWY1OC00/OGNhLTliNDYtM2U2/MDkyYzJmNzVjXzEw/MjR4MTAyNC5wbmc_/dj0xNjIyMjE3MzY3",caption="Leather Anomaly Detection")
+    st.image("https://plus.unsplash.com/premium_photo-1669930762980-563aef80a9a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",caption="Tiles Anomaly Detection")
     st.markdown("""
 
 
@@ -182,7 +183,6 @@ elif app_mode == "Leather Anomaly Detection":
             st.image(test_image, use_container_width=True)
 
         if st.button("Predict"):
-            st.snow()
 
             class_name, confidence_score = predict_image_tflite(test_image)
 
